@@ -93,5 +93,27 @@ border-radius: 5px;
   font-size: 15px;
   color: grey;
   font-family:'Comfortaa', cursive ;
-  
-        html,body { overflow-x: hidden; }
+  }
+
+  .bgk2{
+    background-color: rgb(255, 23, 23);
+  }
+  .div1{
+    
+    background-color: rgb(7, 30, 64);
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.pol{
+    text-decoration: none;
+    font-family:'Comfortaa', cursive ;
+    color: gray;
+}
+.pol:hover{
+
+    font-family:'Comfortaa', cursive ;
+    color: gray;
+
+}
