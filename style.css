@@ -96,7 +96,7 @@ border-radius: 5px;
   }
 
   .bgk2{
-    background-color: rgb(255, 23, 23);
+    background-color: rgb(7, 30, 64);
   }
   .div1{
     
@@ -122,4 +122,8 @@ html, body {
     color: white;
 
 
+}
+
+.x{
+    color: white;
 }

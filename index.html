@@ -46,11 +46,11 @@
            Produtos
           </a>
           <div class="dropdown-menu bgk2">
-            <a class="dropdown-item" href="#">Eletrônicos </a>
-            <a class="dropdown-item" href="#">Decoração</a>
-            <a class="dropdown-item" href="#">Colecionaveis</a>
-            <a class="dropdown-item" href="#">Orientoy é confiavel?</a>
-            <a class="dropdown-item" href="#">Luminárias</a>
+            <a class="dropdown-item x" href="#">Eletrônicos </a>
+            <a class="dropdown-item x" href="#">Decoração</a>
+            <a class="dropdown-item x" href="#">Colecionaveis</a>
+            <a class="dropdown-item x" href="#">Orientoy é confiavel?</a>
+            <a class="dropdown-item x" href="#">Luminárias</a>
             
           </div>
         </li>
@@ -59,12 +59,12 @@
             Sobre nós
           </a>
           <div class="dropdown-menu bgk2">
-            <a class="dropdown-item" href="#">Política de privacidade e segurança </a>
-            <a class="dropdown-item" href="#">Política de entrega</a>
-            <a class="dropdown-item" href="#">Troca e devoluções</a>
-            <a class="dropdown-item" href="#">Orientoy é confiavel?</a>
-            <a class="dropdown-item" href="#">Perguntas frequentes</a>
-            <a class="dropdown-item" href="#">Formas de Pagamento</a>
+            <a class="dropdown-item x" href="#">Política de privacidade e segurança </a>
+            <a class="dropdown-item x" href="#">Política de entrega</a>
+            <a class="dropdown-item x" href="#">Troca e devoluções</a>
+            <a class="dropdown-item x" href="#">Orientoy é confiavel?</a>
+            <a class="dropdown-item x" href="#">Perguntas frequentes</a>
+            <a class="dropdown-item x" href="#">Formas de Pagamento</a>
           </div>
         </li> 
         <li class="nav-item">
@@ -77,17 +77,23 @@
             Contato
           </a>
           <div class="dropdown-menu bgk2">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
+            <a class="dropdown-item x" href="#">Link 1</a>
+            <a class="dropdown-item x" href="#">Link 2</a>
+            <a class="dropdown-item x" href="#">Link 3</a>
           </div>
         </li>   
       </ul>
     </div>  
   </nav>
 <div style="width: 100%;background-color: rgb(255, 23, 23);height: 3px;"></div>
-  
-<img id="imagem" class="img-fluid" src="imagens/banner173.webp" alt="">
+<div class="row">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-10">
+    <img id="imagem" class="img-fluid mt-2" src="imagens/ban.png" alt="">
+  </div>
+  <div class="col-lg-1"></div>
+
+</div>
 <div class="d-flex justify-content-center mt-2">
   <div id="mudar1" onclick="alterar()" class="mude"></div> 
   <div id="mudar2" onclick="alterar2()" div class="ml-1 mude"></div>
@@ -478,30 +484,34 @@
       <h6 class="rodape">Termos e Condições de compra</h6>
       <h6 class="rodape">A Orientoy é confiavel?</h6>
     </div>
-    
-    <!-- <h6 style="color: grey;text-align: left;" class="lanch5 mt-3 ml-2 mr-2">Todos os direitos reservados © 2021
+     <h6 style="color: white;text-align: left;" class="lanch5 mt-3 ml-2 mr-2">Todos os direitos reservados © 2021
               
     </h6>
-    <a class="pol ml-2 mr-2" href="">Políticas</a>  -->
+  <a class="rodape ml-2" href="">Políticas</a>
+  
   </div>
     <div class="col-lg-4">
      
       <div class="ml-2 mr-2">
       <h5 class="rodape mt-2" style="color:rgb(255, 23, 23) ;">Fale Conosco</h5>
      
-        <img src="imagens/whatsapp (1).png" alt=""><br>
-        <h6 class="rodape mt-2 ">(31)8257-8300</h6>  
-    
+        <img src="imagens/whatsapp (1).png" alt="">
+        <a href="https://api.whatsapp.com/send?phone=553182578300&text=Oi!%20Venho%20do%20site%20e%20tenho%20uma%20duvida." class="rodape mt-2 ">(31) 8257-8300</a>  
+    <br>
      
-     <img  src="imagens/email.png" alt="">
-     <h6 class="rodape mt-2 ">contato.orientoy@gmail.com</h6> 
+     <img class="mt-2" src="imagens/email.png" alt="">
+     <a class="rodape mt-5 ">contato.orientoy@gmail.com</a> 
  
     </div>
-
+    <br>
+ 
+      <img width="90px" class="mt-5 mb-2 " src="imagens/logo2.png" alt="">
+  
   </div>
   <div class="col-lg-3"></div>
  
 </div>
+
 </div>
 </div>
 </div>
@@ -557,7 +567,7 @@ var id2=document.getElementById("mudar2")
 
 id.style.backgroundColor="grey"
 id2.style.backgroundColor="rgb(7, 30, 64)"
-  img.src="imagens/banner173.webp"
+  img.src="imagens/ban.png"
   
 
 
@@ -599,7 +609,7 @@ id2.style.backgroundColor="grey"
           chamar()
       }
       else{
-          document.getElementById("imagem").src="imagens/banner173.webp"
+          document.getElementById("imagem").src="imagens/ban.png"
       
 
 id2.style.backgroundColor="rgb(7, 30, 64)"
