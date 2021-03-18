@@ -127,7 +127,44 @@ html, body {
 .x{
     color: white;
 }
-.es{
 
-    line-height:1.5px;
+.areaprod{
+
+}
+
+
+.miniimg{
+    height: 50px;
+    border-radius: 7px;
+
+
+}
+.imgG{
+    border-radius: 9px;
+}
+
+.zoom {
+	overflow: hidden;
+}
+
+.zoom img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.8);
+	-webkit-transform: scale(1.8);
+	transform: scale(1.8);
+}
+
+.titulo{
+
+    font-family: 'Comfortaa', cursiva;
+    color: rgb(7, 30, 64);
+    text-align: center;
+
+
 }

@@ -1,0 +1,641 @@
+
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Orientoy</title>
+    <link rel="shortcut icon" type="imagem/png" href="../imagens/logo2.png">
+    <meta charset="utf-8">
+    <script src=“js/jquery.js”></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+ 
+      <!-- <style type="text/css">
+
+        html{
+        
+        overflow-x:hidden;
+      }
+        </style> -->
+        <style>
+          /* styles unrelated to zoom */
+          * { border:0; margin:0; padding:0; }
+          p { position:absolute; top:3px; right:28px; color:#555; font:bold 13px/1 sans-serif;}
+      
+          /* these styles are for the demo, but are not required for the plugin */
+          .zoom {
+            display:inline-block;
+            position: relative;
+          }
+          
+          /* magnifying glass icon */
+          .zoom:after {
+            content:'';
+            display:block; 
+            width:33px; 
+            height:33px; 
+            position:absolute; 
+            top:0;
+            right:0;
+            background:url(icon.png);
+          }
+      
+          .zoom img {
+            display: block;
+          }
+      
+          .zoom img::selection { background-color: transparent; }
+      
+          #ex2 img:hover { cursor: url(grab.cur), default; }
+          #ex2 img:active { cursor: url(grabbed.cur), default; }
+        </style>
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+        <script src='jquery.zoom.js'></script>
+        <script>
+          $(document).ready(function(){
+            $('#ex1').zoom();
+            $('#ex2').zoom({ on:'grab' });
+            $('#ex3').zoom({ on:'click' });			 
+            $('#ex4').zoom({ on:'toggle' });
+          });
+        </script>
+  </head>
+  <body>
+  
+  <nav class="menu navbar navbar-expand-md bgk navbar-dark ">
+
+    <img src="../imagens/logo2.png" alt="logo" style="width:60px;">
+  </a>
+  
+    <button style="border-color: white;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bgk " id="collapsibleNavbar">
+      <ul  class="navbar-nav topicos ">
+        <li class="nav-item ">
+          <a  style="color:  rgb(255, 23, 23);" class="nav-link link" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle link" href="#" id="navbardrop" data-toggle="dropdown">
+           Produtos
+          </a>
+          <div class="dropdown-menu bgk2">
+            <a class="dropdown-item x" href="#">Eletrônicos </a>
+            <a class="dropdown-item x" href="#">Decoração</a>
+            <a class="dropdown-item x" href="#">Colecionaveis</a>
+            <a class="dropdown-item x" href="#">Orientoy é confiavel?</a>
+            <a class="dropdown-item x" href="#">Luminárias</a>
+            
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle link" href="#" id="navbardrop" data-toggle="dropdown">
+            Sobre nós
+          </a>
+          <div class="dropdown-menu bgk2">
+            <a class="dropdown-item x" href="../pagina politicas/index.html">Políticas</a>
+            <a class="dropdown-item x" href="#">Troca e devoluções</a>
+            <a class="dropdown-item x" href="#">Orientoy é confiavel?</a>
+            <a class="dropdown-item x" href="#">Perguntas frequentes</a>
+            <a class="dropdown-item x" href="#">Formas de Pagamento</a>
+          </div>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link link" href="#">
+            Rastreamento
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle link" href="#" id="navbardrop" data-toggle="dropdown">
+            Contato
+          </a>
+          <div class="dropdown-menu bgk2">
+            <a class="dropdown-item x" href="#">Link 1</a>
+            <a class="dropdown-item x" href="#">Link 2</a>
+            <a class="dropdown-item x" href="#">Link 3</a>
+          </div>
+        </li>   
+      </ul>
+    </div>  
+  </nav>
+<div style="width: 100%;background-color: rgb(255, 23, 23);height: 3px;"></div>
+
+<div class="row">
+<div class="col-lg-1"></div>
+<div class="col-lg-10">
+<div class="row">
+  <div class="col-lg-6">
+    <div class="d-flex justify-content-center">
+<div class="areaprod mt-2">
+  <div class="d-flex justify-content-center">
+
+  </div>
+  
+	<span class='zoom' id='ex1'>
+		<img id="imgp" src='imagens/img1.jpeg' class="imgG img-fluid mb-2  "  alt='Daisy on the Ohoopee'/>
+
+	</span>
+
+  <div class="d-flex justify-content-center">
+
+    <img id="img2" onclick="img2()" src="imagens/img2.jpeg" class="miniimg mt-2 mr-2 mb-2" alt="">
+    <img id="img3" onclick="img3()" src="imagens/img3.jpeg" class="miniimg mt-2 mr-2 mb-2" alt="">
+    <img id="img4" onclick="img4()"src="imagens/img4.jpeg " class="miniimg mt-2 mb-2" alt="">
+    <img id="img5" onclick="img5()"src="imagens/img5.jpeg " class="miniimg mt-2 mb-2 ml-2" alt="">
+</div>
+</div>
+
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="d-flex justify-content-center">
+    
+      <h5 style="color: black;" class="titulo mr-4 mt-2">Adaptador para Free Fire + Mouse + Teclado</h5>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="d-flex justify-content-center">
+         <img width="70px"  src="imagens/5_estrelas.png" alt="">
+        </div>
+        </div>
+      <div class="col-lg-3"></div>
+      <div class="col-lg-3"></div>
+      <div class="col-lg-3"></div>
+    </div>
+   
+      <div class="d-flex justify-content-center ">
+        <h3 class="lanch5 ml-2 mr-2 mt-1">R$8.199,00</h3>
+      </div>
+      <div class="d-flex justify-content-center ">
+        <h6 class="fontpreço ml-2 mr-2 ">até 12x de R$683,25 sem juros</h6>
+      </div>
+      <div class="d-flex justify-content-center ">
+        <a class="efeito-3" href=""><b>COMPRAR</b></a>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="d-flex justify-content-center">
+
+     
+              <select class="custom-select mr-3 ml-3 mb-3 mt-2  col" id="select" required>
+                <option value="x" selected>Opção</option>
+                <option value="P">Adaptador</option>
+                <option value="M">Kit Completo</option>
+                <option value="G">Mouse e Teclado</option>
+            
+              </select>
+              </div>
+          </div>
+          <div class="col-lg-8"></div>
+        </div>
+        <h5 style="color: black;" class="titulo mr-4 mt-2">Descrição</h5>
+        <h6 style="color: black;text-align: left;" class="es titulo mr-4 mt-2 ml-2">Modelo SH-P5
+
+          Adaptador USB<br>
+          
+          Teclado e mouse com fio<br>
+          
+          Resolução 2400 DPI<br>
+          
+          Voltagem DC 4,7 - 5,5 V<br>
+          
+          Corrente < 30mA <br>
+          
+          Bluetooth 4.1<br>
+          
+          Compatível com a maioria dos jogos de tiro, jogos FPS (First-Person Shooters) ou jogos em primeira pessoa, PLAYERUNKNOWN'S BATTLEGROUNDS (PUBG), Rules of Survival, Knives Out, entre outros<br>
+          
+          Frequência nominal < 8M <br>
+          
+          Compatível com Android e Apple IOS System <br>
+           
+          Não suporta MediaTek made CPU mobile e IOS mobile versão13.4 <br>
+          
+          
+          <br>
+          Notas: <br>
+          <br>
+          1. precisa baixar a versão oficial do jogo PUBG na Play Store<br>
+          2. não use nenhum plug-in auxiliar (incluindo plug-in físico, macro mouse)<br>
+          3. não jogue o jogo PUBG com quem usa o plug-in auxiliar<br>
+          4. Além de Android, também suporta IOS mobile e ipad.<br>
+          5. este produto não suporta o "Mediatek" como o Redmi Note 8 Pro mobile e IOS versão 13.4 mobile e ipad.<br>
+          6. Não suporta os modelos abaixo:<br>
+          OPPO: A59s, A83, A79，A1，A3，R9，R7，R15, A7x, F9, Realme 2<br>
+          Vivo: Y81, Y83, Y93, Y97, Y75, 735, Y67, Z3i, X21i, x5<br>
+          Huawei: Y6 NCE-AL00/AL10, Honor V9 ,HONOR 7<br>
+          XIAOMI: Play, Redmi6, redmi note 4.<br>
+          Meizu: V8,Pro7 plus, Mxs<br>
+          Iphone: versão 13.4 ou acima ou ipad.<br>
+          
+          
+          Importado, manual de instruções em inglês.<br>
+          
+          Quando você quiser jogar, ligue o mouse, teclado e conversor. Ajuste o modo correto conforme descrito abaixo:<br>
+          1. conecte o adaptador como mostrado na imagem acima<br>
+          2. para Android: Pressione no teclado "Ctrl + 1" para ajustar o modo correto para se conectar com o seu telefone.<br>
+          Para IPhone: Pressione no teclado "Ctrl + 2" para ajustar o modo correto para se conectar com o seu telefone.<br>
+          3. procurar na play store e instalar o ShootingPlus V3 em seu celular. Observe que a Apple e Android possuem diferentes versões. Observe bem as configurações de bluetooth. Celulares Android e Apple possuem diferenças no bluetooth. Após o download do aplicativo, Mantenha atualizado o aplicativo.<br>
+          Android: use a versão Android do bluetooth "shootingplus v3a" app para definir o seu modo de jogo.<br>
+          IPhone: Baixe a versão da Apple do bluetooth "shootingplus v3i" app para definir o seu modo de jogo.<br>
+          4. Escolha o jogo no aplicativo, baixe o botão predefinido para Crtl + F1 ou Crtl + F2, etc., em seguida, pressione o botão correspondente no teclado. Por exemplo, se você escolher Crtl + F1, então o teclado pressione Crtl + F1. Esta chave corresponderá ao seu jogo.<br>
+          Vamos começar o jogo!<br>
+          Como configurar a tecla de disparo e sensibilidade do mouse?<br>
+          1. conecte o conversor, mouse e teclado.<br>
+          2. depois de configurar o Aplicativo "ShootingPlus V3a "(para Android) ou" Shootingplus v3i "(para iphone), abra o jogo.<br>
+          3. siga o ponto para configurar a tecla de tiro passo a passo, então você pode jogar o seu jogo de tiro como de costume.<br>
+          4. abra o jogo, então você pode observar se no canto superior esquerdo apareceu o ícone do aplicativo, clique nele duas vezes para abri-lo, então você poderá ver um parâmetro, deslize esse ícone para configurar a sensibilidade do mouse, em seguida, salve.<br>
+          <br>
+          Escolha entre três as opções disponíveis de configuração do produto para a sua entrega.<br>
+          
+          O pacote pode incluir (de acordo com a sua opção):<br>
+          
+          1 conversor de teclado Bluetooth + 1 Cabo USB<br>
+          
+          1 conjunto de teclado e mouse ou<br>
+          
+          Conjunto completo que inclui mouse + teclado + conversor.<br>
+          
+          <br>
+          Nota:<br>
+          
+          O desvio de cores pode diferir devido a diferentes configurações do monitor.<br>
+          
+          Não inclui adaptador e suporte para colocar o celular na cabeça (mostrado no vídeo)</h6>
+
+
+
+
+  </div>
+</div>
+
+</div>
+<div class="col-lg-1"></div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-lg-12">
+<div  class="div1 mt-2 footer">
+<div class="row">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-4">
+    <div class="ml-2 mr-2">
+      <h5 class="rodape mt-2" style="color:rgb(255, 23, 23) ;">Institucional</h5>
+    
+      <h6 class="rodape" >Home</h6>
+      <h6 class="rodape">Sobre a Orientoy</h6>
+      <h6 class="rodape">Entregas</h6>
+      <h6 class="rodape">Trocas e devoluções</h6>
+      <h6 class="rodape">Termos e Condições de compra</h6>
+      
+    </div>
+
+  
+  </div>
+    <div class="col-lg-4">
+     
+      <div class="ml-2 mr-2">
+      <h5 class="rodape mt-2" style="color:rgb(255, 23, 23) ;">Fale Conosco</h5>
+     
+        <img src="imagens/whatsapp (1).png" alt="">
+        <a href="https://api.whatsapp.com/send?phone=553182578300&text=Oi!%20Venho%20do%20site%20e%20tenho%20uma%20duvida." class="rodape mt-2 ">(31) 8257-8300</a>  
+    <br>
+     
+     <img class="mt-2" src="imagens/email.png" alt="">
+     <a class="rodape mt-5 ">contato.orientoy@gmail.com</a> 
+ 
+    </div>
+    <br>
+ 
+      <img width="90px" class="mt-5 mb-2 " src="../imagens/logo2.png" alt="">
+  
+  </div>
+  <div class="col-lg-3">
+    <h5 class="rodape mt-2 ml-2" style="color:rgb(255, 23, 23) ;">Redes Sociais</h5>
+    <img class=" ml-2" src="../imagens/facebook.png" alt="">
+     <a href="" class="rodape mt-3  ">Orintoy</a> <br>
+     <img class="mt-2 ml-2" src="../imagens/instagram.png" alt="">
+     <a href="" class="rodape mt-2 ">_Orintoy</a> <br>
+    <!-- <h6 style="color: rgb(7, 30, 64);text-align: left;" class="lanch5 mt-3 ">Todos os direitos reservados © 2021
+              
+    </h6>
+  <a  style="color: rgb(7, 30, 64);" class="rodape" >Políticas</a><br><br> -->
+  
+     <h6 style="color: white;text-align: left;" class="lanch5 mt-4 ml-2">Todos os direitos reservados © 2021
+              
+    </h6>
+  <a class="rodape ml-2" href="">Políticas</a><br><br>
+  </div>
+ 
+ 
+</div>
+
+</div>
+</div>
+</div>
+
+  </body>
+  </html>
+  
+  
+  
+
+
+
+
+<script>
+
+function mudarfoto(){
+ 
+var img1=document.getElementById("img1")
+if(img1.src==="https://orientoy.github.io/Orientoy/imagens/suporte1.PNG"){
+  img1.src="https://orientoy.github.io/Orientoy/imagens/suporte2.PNG"
+}else{
+  img1.src="https://orientoy.github.io/Orientoy/imagens/suporte1.PNG"
+}
+
+}
+
+function mudarfoto2(){
+
+var img2=document.getElementById("img2")
+if(img2.src==="https://orientoy.github.io/Orientoy/imagens/goku1.PNG"){
+  img2.src="https://orientoy.github.io/Orientoy/imagens/goku2.PNG"
+}else{
+  img2.src="https://orientoy.github.io/Orientoy/imagens/goku1.PNG"
+}
+
+}
+function mudarfoto3(){
+debugger
+var img3=document.getElementById("img3")
+if(img3.src=="https://orientoy.github.io/Orientoy/imagens/mouse.PNG"){
+  img3.src="https://orientoy.github.io/Orientoy/imagens/teclado.PNG"
+}else{
+  img3.src="https://orientoy.github.io/Orientoy/imagens/mouse.PNG"
+}
+
+}
+
+
+
+  function alterar(){
+var img=document.getElementById("imagem")
+var id=document.getElementById("mudar1")
+var id2=document.getElementById("mudar2")
+
+id.style.backgroundColor="grey"
+id2.style.backgroundColor="rgb(7, 30, 64)"
+  img.src="imagens/ban.png"
+  
+
+
+
+  }   
+  function alterar2(){
+var img=document.getElementById("imagem")
+var id=document.getElementById("mudar1")
+var id2=document.getElementById("mudar2")
+
+id.style.backgroundColor="rgb(7, 30, 64)"
+id2.style.backgroundColor="grey"
+  img.src="imagens/banner2.webp"
+  
+
+
+
+  }   
+
+
+
+  let valor=0
+  let valor1=2
+  chamar()
+  function chamar(){
+      setTimeout(()=> Trocar(),8500)
+     
+      
+  }
+  function Trocar(){
+    var id=document.getElementById("mudar1")
+    var id2=document.getElementById("mudar2")
+      if(valor1>valor){
+          document.getElementById("imagem").src="imagens/banner2.webp"
+         
+                  id.style.backgroundColor="rgb(7, 30, 64)"
+                  id2.style.backgroundColor="grey"
+          valor+=2
+          chamar()
+      }
+      else{
+          document.getElementById("imagem").src="imagens/ban.png"
+      
+
+id2.style.backgroundColor="rgb(7, 30, 64)"
+id.style.backgroundColor="grey"
+          valor1+=2
+          chamar()
+      }
+   
+  }
+
+
+
+  let valorq=0
+  let valorq1=2
+  chamar2()
+  function chamar2(){
+      setTimeout(()=> Trocar2(),8500)
+
+  }
+  function Trocar2(){
+   
+      if(valorq1>valorq){
+          document.getElementById("imagem2").src="1990_b1.png"
+         
+          
+          valorq+=2
+          chamar2()
+      }
+      else{
+          document.getElementById("imagem2").src="1990_b2.png"
+          valorq1+=2
+          chamar2()
+      }
+   
+  }
+
+  let valore=0
+  let valore1=2
+  chamar3()
+  function chamar3(){
+      setTimeout(()=> Trocar3(),8500)
+
+  }
+  function Trocar3(){
+    
+      if(valore1>valore){
+          document.getElementById("imagem3").src="palmeiras.png"
+         
+          
+          valore+=2
+          chamar3()
+      }
+      else{
+          document.getElementById("imagem3").src="maradona.png"
+          valore1+=2
+          chamar3()
+      }
+   
+  }
+
+
+ let valory=0
+  let valory1=2
+  chamardepoimento()
+  function chamardepoimento(){
+      setTimeout(()=> Trocardepoimento(),9000)
+
+  }
+  function Trocardepoimento(){
+      if(valory1>valory){
+          document.getElementById("cli1").src="cliente5.jpeg"
+          document.getElementById("dep1").innerHTML="Boa tarde quero agradecer pelo manto sagrador chegou ontem!!!Isso aqui é Flamengo ❤️🖤🇦🇱🚩🏴🔴⚫"
+          document.getElementById("nom1").innerHTML="Pedro"  
+         
+          
+          valory+=2
+          chamardepoimento()
+      }
+      else{
+        document.getElementById("cli1").src="cliente4.jpeg"
+          document.getElementById("dep1").innerHTML="A roupa é perfeita qualidade surpreendente recomendo muito."
+          document.getElementById("nom1").innerHTML="José"  
+          valory1+=2
+          chamardepoimento()
+      }
+   
+  } 
+
+
+  let valorz=0
+  let valorz1=2
+  chamardepoimento2()
+  function chamardepoimento2(){
+      setTimeout(()=> Trocardepoimento2(),9900)
+
+  }
+  function Trocardepoimento2(){
+      if(valorz1>valorz){
+          document.getElementById("cli2").src="cliente6.jpeg"
+          document.getElementById("dep2").innerHTML="Só pra agradecer!!!!!<br>Amei a blusa 🥰🖤❤️"
+          document.getElementById("nom2").innerHTML="Ricardo"  
+         
+          
+          valorz+=2
+          chamardepoimento2()
+      }
+      else{
+        document.getElementById("cli2").src="cliente2.jpeg"
+          document.getElementById("dep2").innerHTML="Haha chegou mano vlw mesmo produto de boa qualidade vale a pena obrigado 💪👌👌"
+          document.getElementById("nom2").innerHTML="Breno"  
+          valorz1+=2
+          chamardepoimento2()
+      }
+   
+  } 
+
+
+
+  
+  let valorh=0
+  let valorh1=2
+  chamardepoimento3()
+  function chamardepoimento3(){
+      setTimeout(()=> Trocardepoimento3(),9800)
+
+  }
+  function Trocardepoimento3(){
+      if(valorh1>valorh){
+          document.getElementById("cli3").src="cliente1.jpeg"
+          document.getElementById("dep3").innerHTML="Ótima qualidade do item, ótimo valor, ótima velocidade de entrega e ótimo serviço geral."
+          document.getElementById("nom3").innerHTML="Fernando"  
+         
+          
+          valorh+=2
+          chamardepoimento3()
+      }
+      else{
+        document.getElementById("cli3").src="cliente3.jpeg"
+          document.getElementById("dep3").innerHTML="Chegou minha camisa.Produto muito bom."
+          document.getElementById("nom3").innerHTML="Caio"  
+          valorh1+=2
+          chamardepoimento3()
+      }
+   
+  }
+
+  function img2(){
+   
+   var name=document.getElementById("img2").src
+   
+   var atual=document.getElementById("imgp").src
+ document.getElementById("img2").src=atual
+ document.getElementById("imgp").src=name
+
+
+ }
+ function img3(){
+   
+   var name=document.getElementById("img3").src
+   
+   var atual=document.getElementById("imgp").src
+ document.getElementById("img3").src=atual
+ document.getElementById("imgp").src=name
+
+
+ }
+ function img4(){
+   
+   var name=document.getElementById("img4").src
+   
+   var atual=document.getElementById("imgp").src
+ document.getElementById("img4").src=atual
+ document.getElementById("imgp").src=name
+
+
+ }
+ function img5(){
+   
+   var name=document.getElementById("img5").src
+   
+   var atual=document.getElementById("imgp").src
+ document.getElementById("img5").src=atual
+ document.getElementById("imgp").src=name
+
+
+ }
+   
+</script>
+
+</body>
+</html>
